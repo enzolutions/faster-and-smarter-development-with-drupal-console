@@ -744,6 +744,32 @@ $ drupal generate:theme
 		</section>
 
 		<section>
+			<h2>multisite:debug</h2>
+			<hr/>
+			<p>
+				<img class="no-border" src="assets/images/console_multi_site_debug.png">
+			</p>
+			<aside class="notes">
+				<p>
+					Using the multisite:debug command, you can debug a multisite installation .
+				</p>
+			</aside>
+		</section>
+
+		<section>
+			<h2>drupal --uri=drupal8-rc3.dev cr all</h2>
+			<hr/>
+			<p>
+				<img class="no-border" src="assets/images/console_multi_site_option.png">
+			</p>
+			<aside class="notes">
+				<p>
+					Using the multisite:debug command, you can debug a multisite installation .
+				</p>
+			</aside>
+		</section>
+
+		<section>
 			<h2>container:debug</h2>
 			<hr/>
 			<p>
@@ -1356,31 +1382,6 @@ $ php console.phar self-update
 		</section>
 
 		<section data-background="#0076C2">
-			<h1 class="medium white">Environment setup</h1>
-		</section>
-
-		<section>
-			<h2>Using a Virtual Machine</h2>
-			<hr/>
-			<br/>
-			<ul class="bullets">
-				<li>
-					<h3>DrupalVM</h3>
-					<p>A VM for local Drupal development</p>
-					<p><a href="http://www.drupalvm.com/">http://www.drupalvm.com/</a></p>
-				</li>
-				<li>
-					<h3>Drupal 8 Sprint Box</h3>
-					<p>Simple Drupal 8 Development Environment</p>
-					<p><a href="https://github.com/thom8/drupal8-vagrant">https://github.com/thom8/drupal8-vagrant</a></p>
-				</li>
-			</ul>
-			<aside class="notes">
-				You can also take advantage of a Virtual Machine to provide the LAMP stack plus Drupal 8, drush, DrupalConsole and other tools.
-			</aside>
-		</section>
-
-		<section data-background="#0076C2">
 			<h1 class="medium white">How to contribute?</h1>
 
 			<aside class="notes">
@@ -1462,81 +1463,6 @@ $ composer install
 					</li>
 				</ol>
 			</aside>
-		</section>
-
-		<section>
-			<h2>Code analysis</h2>
-			<hr/>
-			<p>
-				<img src="assets/images/sensiolabs-platinum-medal.png" class="no-border"><br/>
-				<a target="_blank"  href="http://bit.ly/console-insight">http://bit.ly/console-insight</a>
-			</p>
-			<br/>
-			<p>
-				<img src="assets/images/travis-ci.png" class="no-border"><br/>
-				<br/>
-				<a target="_blank"  href="http://bit.ly/console-travis">http://bit.ly/console-travis</a>
-			</p>
-			<aside class="notes">
-				<h3>jmolivas</h3>
-				<p>
-					<strong>We have the Platinum medal:</strong>
-				</p>
-				<p>
-					We use SensioLabsInsight a quality assurance tool to analyzes source code.
-				</p>
-				<p>
-					We use TravisCI, to run unit test on the sent PR.
-				</p>
-			</aside>
-		</section>
-
-		<section>
-			<h2>PHPQA all-in-one Analyzer CLI tool</h2>
-			<hr/>
-			<ul class="bullets">
-				<li>PHP Parallel Lint</li>
-				<li>PHP_CodeSniffer</li>
-				<li>PHPLOC</li>
-				<li>PHP Mess Detector</li>
-				<li>PHPUnit</li>
-			</ul>
-			<h3 class="title">
-				<a href="https://github.com/jmolivas/phpqa">
-					https://github.com/jmolivas/phpqa
-				</a>
-			</h3>
-			<aside class="notes">
-				<p>
-					We are starting to use this PHPQA tool to analyze code before commiting to the repo.
-				</p>
-			</aside>
-		</section>
-
-		<section>
-			<h2>Running PHPQA manually</h2>
-			<pre><code class="bash text-big">
-$ cd /path/to/DrupalConsole
-$ phpqa analyze --files=src/
-
-</code></pre>
-			<br>
-			<h2>Running PHPQA automatically</h2>
-<pre><code class="bash text-big">
-$ vim .git/hooks/pre-commit
-# Paste this:
-phpqa analyze --git
-
-</code></pre>
-		<aside class="notes">
-			<p>
-				You can run it manually by executing the phpqa command and indicating the files or directory to scan by using the "--files" option.
-			</p>
-			<p>
-				Or maybe you can setup a pre-commit git-hook and use the "--git" option to scan all files added to git index.
-			</p>
-		</aside>
-
 		</section>
 
 		<section>
@@ -1748,13 +1674,11 @@ phpqa analyze --git
 			<hr/>
 			<h3 class="title">Feel free to stalk us or ask any question at:</h3>
 			<br/>
-			<h2 class="dark-blue">@dmouse | @jmolivas</h2>
-			<h2 class="dark-blue">@enzolutions | @omers</h2>
-			<h2 class="dark-blue">@drupalconsole</h2>
+			<h2 class="dark-blue">@enzolutions | @drupalconsole</h2>
 			<p>
 				<br/>
 					<a href="https://gitter.im/hechoendrupal/DrupalConsole">
-						<h2>https://gitter.im/hechoendrupal/DrupalConsole</h2>
+						<h3>https://gitter.im/hechoendrupal/DrupalConsole</h3>
 					</a>
 			</p>
 		</section>
