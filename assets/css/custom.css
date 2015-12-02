@@ -185,6 +185,10 @@ div.align-right {
   font-weight: bold;
 }
 
+img.logos {
+	height: 320px;
+}
+
 img.avatar {
 	width: 320px;
 	height: 320px;

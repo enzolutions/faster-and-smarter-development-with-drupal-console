@@ -37,8 +37,9 @@
 
 				<section >
 					<br/>
-					<h1 class="big">Faster and Smarter Development with Drupal Console</h1>
-					<img src="assets/images/drupal-console.png" class="no-border">
+					<h1 class="big">Drupal 8 development efective and efficient with Drupal Console</h1>
+					<img src="assets/images/drupal-console.png" class="no-border logos">
+					<img src="assets/images/drupalcamp-chile.png" class="no-border logos">
 					<p>
 						<!-- <a href="http://bit.ly/melbourne-console">http://bit.ly/melbourne-console</a> -->
 					</p>
@@ -343,7 +344,7 @@ Install the Console locally by running the installer <br/> in your project direc
 <pre><code class="bash text-medium">
 $ curl http://drupalconsole.com/installer | php
 
-$ mv console.phar /usr/local/bin/drupal
+$ mv drupal.phar /usr/local/bin/drupal
 
 $ drupal
 
@@ -445,7 +446,7 @@ $ composer create-project
 		</section>
 
 		<section>
-			<h2>init</h2>
+			<h2>drupal init</h2>
 			<hr/>
 		<p>
 			<br/>
@@ -457,6 +458,101 @@ $ composer create-project
 				Use the init command to copy the configurations files, overriding values on these files is how you can change DrupalConsole behaviour. 
 			</p>
 		</aside>
+
+		</section>
+
+		<section data-background="#0076C2">
+			<h1 class="medium white">Getting & Installing Drupal</h1>
+			<aside class="notes">
+				<h3>omers</h3>
+				<p>
+					We started the project as a scaffolding code generator.
+				</p>
+				<p>
+					But eventually we have needed to test the generated code.
+				</p>
+				<p>
+					For that reason we added commands to interact with the Drupal Installation.
+				</p>
+			</aside>
+		</section>
+
+		<section>
+			<h2>drupal chain --file=quick-start.yml</h2>
+			<hr/>
+			<p>
+				<br/>
+				<img class="no-border" src="assets/images/console-chain-quick-start.png" alt="">
+			</p>
+
+			<aside class="notes">
+				<p>
+					Chain quick-start will execute several commands in this case command that will download Drupal, install it using SQLite and start PHP's built in server you only need to open your browser and point it to 127.0.0.1:8088..
+				</p>
+			</aside>
+		</section>
+
+		<section>
+			<h2>site:new</h2>
+			<hr/>
+			<p>
+				<img class="no-border" src="assets/images/site-new.png">
+			</p>
+			<aside class="notes">
+				<p>
+					You can download Drupal 8 using the site:new command.
+				</p>
+			</aside>
+		</section>
+
+		<section>
+			<h2>site:install</h2>
+			<hr/>
+			<p>
+				<img class="no-border" src="assets/images/site-install.png">
+			</p>
+			<aside class="notes">
+				<p>
+					You can install Drupal 8 using the site:install command.
+				</p>
+			</aside>
+		</section>
+
+		<section data-background="#0076C2">
+			<h1 class="medium white">Remote command execution</h1>
+			<aside class="notes">
+				<p>
+					Sites featur allow us to execute commands on any remote or local site from the local terminal.
+			</aside>
+		</section>
+
+		<section>
+			<h2>site:debug</h2>
+			<hr/>
+			<img class="no-border" src="assets/images/site-debug-1.png">
+		</section>
+
+		<section>
+			<h2>drupal --root</h2>
+			<hr/>
+			<img class="no-border" src="assets/images/console-root.png">
+			<aside class="notes">
+				<p>
+					You can interact with any local site by using the --root option.
+				</p>
+			</aside>
+		</section>
+
+		<section>
+			<h2>site:debug drupal8links.dev</h2>
+			<hr/>
+			<img class="no-border" src="assets/images/site-debug-2.png">
+		</section>
+
+		<section>
+			<h2>drupal --target=drupal8links.dev cr all</h2>
+			<hr/>
+			<img class="no-border" src="assets/images/drupal-target.png">
 		</section>
 
 		<section data-background="#0076C2">
@@ -746,32 +842,6 @@ $ drupal generate:theme
 				</p>
 				<p>
 					For that reason we added commands to interact with the Drupal Installation.
-				</p>
-			</aside>
-		</section>
-
-		<section>
-			<h2>site:new</h2>
-			<hr/>
-			<p>
-				<img class="no-border" src="assets/images/site-new.png">
-			</p>
-			<aside class="notes">
-				<p>
-					You can download Drupal 8 using the site:new command.
-				</p>
-			</aside>
-		</section>
-
-		<section>
-			<h2>site:install</h2>
-			<hr/>
-			<p>
-				<img class="no-border" src="assets/images/site-install.png">
-			</p>
-			<aside class="notes">
-				<p>
-					You can install Drupal 8 using the site:install command.
 				</p>
 			</aside>
 		</section>
@@ -1097,51 +1167,11 @@ You can create your own chain command and define the common Drupal 8 features yo
 		</section>
 
 		<section data-background="#0076C2">
-			<h1 class="medium white">Remote command execution</h1>
-			<aside class="notes">
-				<p>
-					Sites featur allow us to execute commands on any remote or local site from the local terminal.
-			</aside>
-		</section>
-
-		<section>
-			<h2>site:debug</h2>
-			<hr/>
-			<img class="no-border" src="assets/images/site-debug-1.png">
-		</section>
-
-		<section>
-			<h2>site:debug drupal8links.dev</h2>
-			<hr/>
-			<img class="no-border" src="assets/images/site-debug-2.png">
-		</section>
-
-		<section>
-			<h2>drupal --target=drupal8links.dev cr all</h2>
-			<hr/>
-			<img class="no-border" src="assets/images/drupal-target.png">
-		</section>
-
-		<section data-background="#0076C2">
 			<h1 class="medium white">Tips</h1>
-		</section>
-
-		<section data-background="#0076C2">
-			<h1 class="medium white">#Protip 1</h1>
-			<h3 class="title white">Use --root option</h3>
-<pre><code class="bash text-medium">
-$ drupal --root=/var/www/drupal8.dev
-
-</code></pre>
-		<aside class="notes">
-			<p>
-				You can interact with any local site by using the --root option.
-			</p>
-		</aside>
 		</section>
  
 		<section data-background="#0076C2">
-			<h1 class="medium white">#Protip 2</h1>
+			<h1 class="medium white">#Protip 1</h1>
 			<h3 class="title white">Use multilanguage feature</h3>
 <pre><code class="bash text-medium">
 # ~/.console/config.yml
@@ -1182,7 +1212,7 @@ application:
 		</section>
 
 		<section data-background="#0076C2">
-			<h1 class="medium white">#Protip 3</h1>
+			<h1 class="medium white">#Protip 2</h1>
 			<h3 class="title white">Use default values</h3>
 <pre><code class="bash text-medium">
 # ~/.console/config.yml
@@ -1206,7 +1236,7 @@ application:
 		</section>
 
 		<section data-background="#0076C2">
-			<h1 class="medium white">#Protip 4</h1>
+			<h1 class="medium white">#Protip 3</h1>
 			<h3 class="title white">Disable contributed commands</h3>
 <pre><code class="bash text-medium">
 # ~/.console/config.yml
@@ -1231,7 +1261,7 @@ application:
 		</section>
 
 		<section data-background="#0076C2">
-			<h1 class="medium white">#Protip 5</h1>
+			<h1 class="medium white">#Protip 4</h1>
 			<h3 class="title white">Use command alias</h3>
 <pre><code class="bash text-medium">
 $ drupal cr all
@@ -1253,7 +1283,7 @@ application:
 		</section>
 
 		<section data-background="#0076C2">
-			<h1 class="medium white">#Protip 6</h1>
+			<h1 class="medium white">#Protip 5</h1>
 			<h3 class="title white">Use --help option</h3>
 <pre><code class="bash text-medium">
 $ drupal generate:module --help
@@ -1271,7 +1301,7 @@ $ drupal generate:module --help
 		</section>
 
 		<section data-background="#0076C2">
-			<h1 class="medium white">#Protip 7</h1>
+			<h1 class="medium white">#Protip 6</h1>
 			<h3 class="title white">Use --generate-inline</h3>
 <pre><code class="bash text-medium">
 $ drupal generate:entity:config --generate-inline
@@ -1298,7 +1328,7 @@ $ drupal generate:entity:config --generate-inline
 		</section>
 
 		<section data-background="#0076C2">
-			<h1 class="medium white">#Protip 8</h1>
+			<h1 class="medium white">#Protip 7</h1>
 			<h3 class="title white">Use --generate-chain</h3>
 <pre><code class="bash text-medium">
 $ drupal generate:module --generate-chain
@@ -1320,7 +1350,7 @@ $ drupal generate:module --generate-chain
 
 
 		<section data-background="#0076C2">
-			<h1 class="medium white">#Protip 9</h1>
+			<h1 class="medium white">#Protip 8</h1>
 			<h3 class="title white">Use --generate-doc</h3>
 <pre><code class="bash text-medium">
 $ drupal webprofiler:benchmark --generate-doc
@@ -1343,7 +1373,7 @@ $ drupal webprofiler:benchmark --generate-doc
 		</section>
 
 <section data-background="#0076C2">
-			<h1 class="medium white">#Protip 10</h1>
+			<h1 class="medium white">#Protip 9</h1>
 			<h3 class="title white">Use peco command</h3>
 <pre><code class="bash text-medium">
 $ drupal router:debug 
@@ -1400,8 +1430,6 @@ $ drupal router:debug
 			<br/>
 <pre><code class="bash text-big">
 $ drupal self-update
-
-$ console self-update
 
 $ php console.phar self-update
 
@@ -1568,7 +1596,6 @@ $ composer install
 
 		<section>
 			<h3 class="title">Increase code coverage.</h3>
-			<h3 class="title">Multi-site support.</h3>
 			<h3 class="title">Improve documentation and translations.</h3>
 			<h3 class="title">Improve verbose code-output.</h3>
 			<h3 class="title">Dummy content generation.</h3>
