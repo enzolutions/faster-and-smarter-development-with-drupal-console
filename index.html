@@ -341,8 +341,8 @@
 Install the Console locally by running the installer <br/> in your project directory:
 </p>
 <br/>
-<pre><code class="bash text-medium">
-$ curl http://drupalconsole.com/installer | php
+<pre><code class="bash text-tiny">
+$ curl http://drupalconsole.com/installer -L -o drupal.phar | php
 
 $ mv drupal.phar /usr/local/bin/drupal
 
@@ -533,17 +533,6 @@ $ composer create-project
 		</section>
 
 		<section>
-			<h2>drupal --root</h2>
-			<hr/>
-			<img class="no-border" src="assets/images/console-root.png">
-			<aside class="notes">
-				<p>
-					You can interact with any local site by using the --root option.
-				</p>
-			</aside>
-		</section>
-
-		<section>
 			<h2>site:debug drupal8links.dev</h2>
 			<hr/>
 			<img class="no-border" src="assets/images/site-debug-2.png">
@@ -553,6 +542,17 @@ $ composer create-project
 			<h2>drupal --target=drupal8links.dev cr all</h2>
 			<hr/>
 			<img class="no-border" src="assets/images/drupal-target.png">
+		</section>
+
+		<section>
+			<h2>drupal --root</h2>
+			<hr/>
+			<img class="no-border" src="assets/images/console-root.png">
+			<aside class="notes">
+				<p>
+					You can interact with any local site by using the --root option.
+				</p>
+			</aside>
 		</section>
 
 		<section data-background="#0076C2">
@@ -1625,7 +1625,9 @@ $ composer install
 		<section>
 			<h2>Upcomming implementations</h2>
 			<hr/>
-			<h3 class="title">Meta tag</h3>
+			<h3 class="title">Drupal Commerce</h3>
+			<h3 class="title">Meta Tag</h3>
+			<h3 class="title">Page Manager</h3>
 			<h3 class="title">Rules</h3>
 			<h3 class="title">[Your module here]</h3>
 			<aside class="notes">
@@ -1636,6 +1638,8 @@ $ composer install
 					But now I will list the modules with plans or currenlty working on implementing DrupalConsole commands.
 				</p>
 				<ul>
+					<li>Drupal Commerce</li>
+					<li>Page Manager</li>
 					<li>MetaTag</li>
 					<li>Rules</li>
 					<li>Your module?</li>

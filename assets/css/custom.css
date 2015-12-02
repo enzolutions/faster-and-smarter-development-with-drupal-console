@@ -37,6 +37,10 @@ div.text-medium, code.text-medium, ul.text-medium, pre code.text-medium, p.text-
 	line-height: 100%;
 }
 
+code.text-tiny {
+	font-size: 50%;
+}
+
 div.text-small, code.text-small, ul.text-small, pre code.text-small, p.text-small {
 	font-size: 80%;
 }
