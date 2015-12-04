@@ -4,10 +4,10 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>Drupal 8 development effective and efficient with Drupal Console</title>
+		<title>Drupal 8 Development Workshop</title>
 
-		<meta name="description" content="Faster and Smarter Development with Drupal Console">
-		<meta name="author" content="Jesus Manuel Olivas">
+		<meta name="description" content="Drupal 8 Development Workshop">
+		<meta name="author" content="enzo - Eduardo Garcia">
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style"
@@ -37,7 +37,7 @@
 
 				<section >
 					<br/>
-					<h1 class="big">Drupal 8 development effective and efficient with Drupal Console</h1>
+					<h1 class="big">Drupal 8 Development Workshop</h1>
 					<img src="assets/images/drupal-console.png" class="no-border logos">
 					<img src="assets/images/drupalcamp-chile.png" class="no-border logos">
 					<p>
@@ -194,136 +194,6 @@
 					</aside>
 				</section>
 
-
-				<section data-background="#0076C2">
-							<h1 class="medium white">Why should you care about it?</h1>
-				</section>
-
-				<section>
-					<h2>Drupal is more tehcnically advanced</h1>
-					<h2>
-					<hr/>
-					<img class="no-border" src="assets/images/drupal-8-changes.png">
-					<aside class="notes">
-						<h3>@omers</h3>
-						<p>
-							Drupal 8 is more technically advanced compared to its predecessor and managing the increasing complexity of Drupal 8 could be a daunting task for anyone. Drupal Console is a suite of tools to help manage that complexity. Writing a Drupal 8 module now involves a lot more boilerplate code and there is a lot you need to know and do just to get started building a new module. 
-						</p>
-						<p>
-							I will list some differences between Drupal 8 and 7, related to writing a module.
-						</p>
-							<ul>
-								<li>Drupal 8 is object oriented and Drupal 7 is mostly procedural.</li>
-								<li>Each class will need a namespace and must be created within and specific directory.</li>
-								<li>Each class must include other classes defined within a namespace.</li>
-								<li>Each class could extend or implement another classes.</li>
-								<li>Drupal 8 takes advantage of external libraries.</li>
-								<li>Drupal 8 uses .yml files for configuration.</li>
-								<li>Drupal 8 uses plugins which provide reusable pieces of functionality.</li>
-								<li>Drupal 8 uses PHP annotations. The Drupal 8 plugin system uses them to describe plugins and they are used by Drupal to discover your plugin.</li>
-							</ul>
-					</aside>
-				</section>
-
-				<!-- <section data-background="#0076C2">
-					<h1 class="medium white">How does Drupal Console help?</h1>
-					<aside class="notes">
-						<ul>
-							<li>
-								<p>
-								The main goal of DrupalConsole is, to help you developing faster and smarter with Drupal 8.
-								</p>
-							</li>
-							<li>
-								<p>
-								Drupal Console provides a number of commands for creating module scaffolding and boilerplate code. For each command, you will be asked a series of questions about what you want to generate.
-								</p>
-							</li>
-							<li>
-								<p>
-								Drupal Console allows you to interact with your Drupal installation from rebulding cache, installing modules, debugging the syustem to configuration management.
-								</p>
-							</li>
-							<li>
-								<p>
-								You can even learn Drupal 8, inspecting the generated comment blocks while using --learning option. (similar to examples module)
-								</p>
-							</li>
-						</ul>
-					</aside>
-				</section> -->
-
-
-				<section>	
-					<h2>Topics</h2>
-					<hr/>
-					<ul class="bullets medium">
-						<li>Where to find and how to Download Drupal Console</li>
-						<li>Generate code/files required by a Drupal 8 module.</li>
-						<li>Interact with your Drupal 8 installation.</li>
-						<li>Learn Drupal 8.</li>
-						<li>Write an integration.</li>
-						<li>Automate command execution.</li>
-						<li>Remote command execution.</li>
-						<li>Contribute to the project and Roadmap.</li>
-					</ul>
-					<aside class="notes">
-					</aside>
-				</section>
-
-
-		<section data-background="#0076C2">
-			<h1 class="medium white">Where do you find the project?</h1>
-			<aside class="notes">
-				<p>
-					At this point, you may be asking yourself. 
-				</p>
-				<p>
-					Where do I find this awesome project?
-				</p>
-				<p>
-					well ...
-				</p>
-			</aside>
-
-		</section>
-
-		<section>
-			<p>
-				<h3 class="title">Landing Page</h3>
-				<a target="_blank"  href="http://drupalconsole.com">
-					http://drupalconsole.com/
-				</a>
-			</p>
-			<br/>
-			<p>
-				<h3 class="title">Documentation</h3>
-				<a href="http://bit.ly/console-book">
-					http://bit.ly/console-book
-				</a>
-				</h3>
-			</p>
-			<br/>
-			<p>
-				<h3 class="title">Support</h3>
-				<a href="http://bit.ly/console-support">
-					http://bit.ly/console-support
-				</a>
-			</p>
-			<aside class="notes">
-				<h3>omers</h3>
-				<p>
-					Just by visiting the project landing page.
-				</p>
-				<p>
-					drupalconsole[dot]com
-				</p>
-				<p>
-					In this landing page you will find information and links about documentation and how to get support.
-				</p>
-			</aside>
-		</section>
-
 		<section data-background="#0076C2">
 			<h1 class="medium white">Download Drupal Console</h1>
 			<aside class="notes">
@@ -386,59 +256,6 @@ $ drupal
 				</p>
 
 			</aside>
-		</section>
-
-		<section>
-			<h2>Using Composer</h2>
-			<hr/>
-<pre><code class="bash text-medium">
-$ composer global require drupal/console:@stable
-
-# download at: 
-# ~/.composer/vendor/drupal/console 
-
-# run it using:
-$ ~/.composer/vendor/bin/console
-
-</code></pre>
-<p>
-	<br/>
-	<a href="http://hechoendrupal.gitbooks.io/drupal-console/content/using/composer.html">Gitbook - Using Composer</a>
-</p>
-		<aside class="notes">
-			<p>
-				You can install this project using composer global require command. 
-			</p>
-			<p>
-				Same as the instaler example, if may you want to access globally. In this case you need to add the binary directory to your class path.
-			</p>
-		</aside>
-		</section>
-
-		<section>
-			<h2>Using Drupal Composer</h2>
-			<hr/>
-<pre><code class="bash text-medium">
-$ composer create-project 
-  drupal-composer/drupal-project:8.x-dev 
-  drupal8.dev 
-  --stability dev 
-  --no-interaction
-
-</code></pre>
-<p>
-	<br/>
-	<a href="https://github.com/drupal-composer/drupal-project">https://github.com/drupal-composer/drupal-project</a>
-</p>
-		<aside class="notes">
-			<p>
-			You can also, use the DrupalComposer project a "Composer template for Drupal projects." and use composer create-project command.	
-			</p>
-			<p>
-				This template take care of downloading Drupal8, Drush, DrupalConsole and other tools.  
-			</p>
-		</aside>
-
 		</section>
 
 		<section data-background="#0076C2">
@@ -514,43 +331,6 @@ $ composer create-project
 			<aside class="notes">
 				<p>
 					You can install Drupal 8 using the site:install command.
-				</p>
-			</aside>
-		</section>
-
-		<section data-background="#0076C2">
-			<h1 class="medium white">Remote command execution</h1>
-			<aside class="notes">
-				<p>
-					Sites featur allow us to execute commands on any remote or local site from the local terminal.
-			</aside>
-		</section>
-
-		<section>
-			<h2>site:debug</h2>
-			<hr/>
-			<img class="no-border" src="assets/images/site-debug-1.png">
-		</section>
-
-		<section>
-			<h2>site:debug drupal8links.dev</h2>
-			<hr/>
-			<img class="no-border" src="assets/images/site-debug-2.png">
-		</section>
-
-		<section>
-			<h2>drupal --target=drupal8links.dev cr all</h2>
-			<hr/>
-			<img class="no-border" src="assets/images/drupal-target.png">
-		</section>
-
-		<section>
-			<h2>drupal --root</h2>
-			<hr/>
-			<img class="no-border" src="assets/images/console-root.png">
-			<aside class="notes">
-				<p>
-					You can interact with any local site by using the --root option.
 				</p>
 			</aside>
 		</section>
@@ -749,64 +529,6 @@ $ drupal generate:plugin:block
 		</section>
 
 		<section>
-			<h2>generate:entity:content</h2>
-			<hr>
-<div>
-<pre><code class="bash text-big">
-$ drupal generate:entity:content
-  --module="example"
-  --entity-class="Foo"
-  --entity-name="foo"
-  --no-interaction
-
-</code></pre>
-</div>
-		<aside class="notes">
-			<h3>jmolivas</h3>
-			<p>
-				I have been showing you commands generating two or there files, which is probably not too impresive.
-			</p>
-			<p>
-				Remember what I told you about complexity in Drupal 8 ?.
-			</p>
-			<p>
-				Adding an entity on Drupal 8 is a complex task. 
-			</p>
-		</aside>
-		</section>
-
-		<section>
-			<img class="no-border" src="assets/images/console-generate-entity-content.png" alt="">
-			<aside class="notes">
-				<h3>jmolivas</h3>
-				<p>Because you need to create/update about 14 files.</p>
-				<p>
-					Those files are classes, forms, routes and menu links.
-				</p>
-				<p>
-					Entities are plugins and require to add annotations same as in the block generation that code is added by the command.
-				</p>
-				<p>
-					The generated entity is fieldable from de UI and provides Views integration.
-				</p>
-			</aside>
-		</section>
-
-<!-- 
-		<section>
-			<h2>generate:theme</h2>
-			<hr/>
-<pre><code class="bash text-big">
-$ drupal generate:theme
-
-</code></pre>
-		</section>
-
-		<section>
-			<img src="assets/images/generate-theme.png">
-		</section>
- -->
-		<section>
 			<h2>Other generators</h2>
 			<hr/>
 <pre><code class="bash text-medium">
@@ -842,32 +564,6 @@ $ drupal generate:theme
 				</p>
 				<p>
 					For that reason we added commands to interact with the Drupal Installation.
-				</p>
-			</aside>
-		</section>
-
-		<section>
-			<h2>multisite:debug</h2>
-			<hr/>
-			<p>
-				<img class="no-border" src="assets/images/console_multi_site_debug.png">
-			</p>
-			<aside class="notes">
-				<p>
-					Using the multisite:debug command, you can debug a multisite installation .
-				</p>
-			</aside>
-		</section>
-
-		<section>
-			<h2>drupal --uri=drupal8-rc3.dev cr all</h2>
-			<hr/>
-			<p>
-				<img class="no-border" src="assets/images/console_multi_site_option.png">
-			</p>
-			<aside class="notes">
-				<p>
-					Using the multisite:debug command, you can debug a multisite installation .
 				</p>
 			</aside>
 		</section>
@@ -931,17 +627,6 @@ $ drupal generate:theme
 		</section>
 
 		<section>
-			<h2>site</h2>
-			<hr/>
-<pre><code class="bash text-big">
-site
-  site:maintenance [ON/OFF]
-  site:status 
-
-</code></pre>
-		</section>
-
-		<section>
 			<h2>config</h2>
 			<hr/>
 <pre><code class="bash text-medium">
@@ -983,62 +668,19 @@ user
 	</section>
 
 
-		<section data-background="#0076C2">
-			<h1 class="medium white">Learn Drupal 8.</h1>
-		</section>
+	<section data-background="#0076C2">
+		<h1 class="medium white">Write an integration</h1>
+		<aside class="notes">
+			<h3>jmolivas</h3>
+			<p>
+				If you are a module maintainer. You can write an integration to take advantage of drupal console features.
+			</p>
+		</aside>
+	</section>
 
-		<section>
-			<h2>Use --learning option</h2>
-			<hr/>
-<pre><code class="bash text-big">
-$ drupal generate:controller
-  --module="example"
-  --class-name="ExampleController"
-  --method-name="hello"
-  --route="/hello/{name}"
-  --learning
-  --no-interaction
-
-</code></pre>
-			<aside class="notes">
-				<h3>jmolivas</h3>
-				<ul>
-					<li>I can imagine some of you, are thinking in use the generated code to learn Drupal 8 by applying Reverse Engineering.</li>
-				</ul>
-				<p>
-					However, this approach coud not be enough.
-				</p> 
-				<p>
-					For that reason we provide you with an option to provide extra information to the generated code.
-				</p>
-			</aside>
-		</section>
-
-		<section>
-			<img src="assets/images/generate-controller-learning.png">
-			<aside class="notes">
-				<p>
-					When executing a command using the "--learning" option, aditionaly to the generated boilerplate code, a commented block messages will be added, describing the code functionality.
-				</p>
-				<p>
-					NOTE: This option is only available for the "generate:controller" command, please let us now, where do you think this could be helpful.
-				</p>
-			</aside>
-		</section>
-
-		<section data-background="#0076C2">
-			<h1 class="medium white">Write an integration</h1>
-			<aside class="notes">
-				<h3>jmolivas</h3>
-				<p>
-					If you are a module maintainer. You can write an integration to take advantage of drupal console features.
-				</p>
-			</aside>
-		</section>
-
-		<section>
-			<h2>generate:command</h2>
-			<hr>
+	<section>
+		<h2>generate:command</h2>
+		<hr>
 
 <pre><code class="bash text-big">
 $ drupal generate:command
@@ -1069,56 +711,6 @@ $ drupal generate:command
 					From there you can implement your bussines logic.
 				</p>
 			</aside>
-		</section>
-
-		<section>
-			<h2>webprofiler</h2>
-			<hr>
-			<br/><br/>
-			<p>
-				<img src="assets/images/webprofiler.png" class="no-border">
-			<br/><br/>
-				<a target="_blank" href="https://www.drupal.org/project/webprofiler">
-					<h3 class="title">https://www.drupal.org/project/webprofiler</h3>
-				</a>
-			</p>
-
-			<aside class="notes">
-				<h3>jmolivas</h3>
-				<p>
-					Let me tell you about the awesome webprofiler project. Which is an implementation of Symfony WebProfiler.
-				</p>
-				<p>
-					The web-profiler collects information for all requests.
-				</p>
-				<p>
-					You can see how long the page take to load, how much memory was used, the number of executed SQL querys, the loaded forms and blocks, the current logged user between others.
-				</p>
-				<p>
-					This module was the first module to take advantage of Drupal Console features.
-				</p>
-			</aside>
-		</section>
-
-		<section>
-			<h2>webprofiler:benchmark  </h2>
-			<hr/>
-			<img class="no-border" src="assets/images/webprofiler-benchmark.png">
-			<aside class="notes">
-			<p>
-				This command allow you to execute several request against your Drupal site and show you a result of average execution time and cosumed memory.
-			</p>
-			</aside>
-		</section>
-
-		<section>
-			<h2>webprofiler</h2>
-<pre><code class="bash text-big">
-  webprofiler:benchmark             
-  webprofiler:export                
-  webprofiler:list                  
-
-</code></pre>
 		</section>
 
 		<section data-background="#0076C2">
@@ -1348,70 +940,6 @@ $ drupal generate:module --generate-chain
 			</aside>
 		</section>
 
-
-		<section data-background="#0076C2">
-			<h1 class="medium white">#Protip 8</h1>
-			<h3 class="title white">Use --generate-doc</h3>
-<pre><code class="bash text-medium">
-$ drupal webprofiler:benchmark --generate-doc
-
-</code></pre>
-		<aside class="notes">
-			<p>
-				If you write an integration with your module and want to generate a markdown representation of the commmad definition I mean options and arguments you can pass the "generate-doc" option.
-			</p>
-		</aside>
-		</section>
-
-		<section>
-			<img src="assets/images/generate-doc.png" class="no-border">
-			<aside class="notes">
-				<p>
-					This will output a valid markdown code you can copy and paste on your module, readme file.
-				</p>
-			</aside>
-		</section>
-
-<section data-background="#0076C2">
-			<h1 class="medium white">#Protip 9</h1>
-			<h3 class="title white">Use peco command</h3>
-<pre><code class="bash text-medium">
-$ drupal router:debug 
-  | peco | awk -F ' ' '{print $1}' | 
-  xargs drupal router:debug
-
-</code></pre>
-<p>
-	<br/>
-	<h3 class="title">
-		<a class="white" href="https://github.com/peco/peco">
-			https://github.com/peco/peco
-		</a>
-	</h3>
-</p>
-		<aside class="notes">
-			<p>
-				I totally agree the router:debug and container:debug output is not the best in the world.
-			</p>
-			<p>
-				But you can take advantage of tools like peco an interactive filtering tool.
-			</p>
-		</aside>
-
-		</section>
-
-		<section>
-			<img src="assets/images/router-debug-peco.png" class="no-border">
-			<aside class="notes">
-				<p>
-					And then make your result looks like this.
-				</p>
-				<p>
-					Peco provide filtering and arrow selection out-of-the-box.
-				</p>
-			</aside>
-		</section>
-
 		<section data-background="#0076C2">
 			<h1 class="medium white">Update Drupal Console</h1>
 			<aside class="notes">
@@ -1441,297 +969,7 @@ $ php console.phar self-update
 			</p>
 		</aside>
 		</section>
-
-		<section data-background="#0076C2">
-			<h1 class="medium white">How to contribute?</h1>
-
-			<aside class="notes">
-				<h3>jmolivas</h3>
-				<p>
-					I mentioned about integration, using as example the webprofiler module, and I like to talk about contribution.
-				</p>
-				<p>
-					Anyone can contribute, you can add new features, write an integration with your custom module, improve transaltions and documentation.
-				</p>
-				<p>
-					But first you need to get the code right.
-				</p>
-			</aside>
-		</section>
-
-		<section>
-			<h2>Getting the project</h2>
-			<hr/>
-			<p>Fork your own copy of the Console repository</p>
-			<p>
-			<a target="_blank"  href="http://bit.ly/console-fork">http://bit.ly/console-fork</a>
-			</p>
-			<br/>
-			<p>Clone your forked repository.</p>
-<pre><code class="bash">
-$ git clone git@github.com:[github-user]/DrupalConsole.git
-
-</code></pre>
-<br/>
-<p>Download dependencies using componser.</p>
-<pre><code class="bash">
-$ cd /path/to/DrupalConsole
-$ composer install
-
-</code></pre>
-		<aside class="notes">
-			<h3>jmolivas</h3>
-			<p>
-				... Getting the project is as easy as follow this 3 steps.
-			</p>
-			<ol>
-				<li>
-					<p>Fork the project</p>
-				</li>
-				<li>
-					<p>Clone your fork</p>
-				</li>
-				<li>
-					<p>Download dependencies</p>
-				</li>
-			</ol>
-		</aside>
-		</section>
-
-		<section>
-			<h2>Before commiting your code</h2>
-			<hr/>
-			<p>
-			<h3 class="title">Project code is PSR-2 Coding Style.</h3>
-			<a target="_blank"  href="http://www.php-fig.org/psr/psr-2/">http://www.php-fig.org/psr/psr-2/</a>
-			</p>
-			<br/>
-			<p>
-			<h3 class="title">Generated code is Drupal Coding Style.</h3>
-			<a target="_blank"  href="https://www.drupal.org/coding-standards">https://www.drupal.org/coding-standards</a>
-			</p>
-			<aside class="notes">
-				<h3>jmolivas</h3>
-				<p>
-					Before commiting your code you need to know
-				</p>
-				<ol>
-					<li>
-						<p>Since Drupal Console is not a Drupal module is a Symfony application, project code is PSR-2 Coding Style.</p>
-					</li>
-					<li>
-						<p>But don't worry, generated code is Drupal Coding Style.</p>
-					</li>
-				</ol>
-			</aside>
-		</section>
-
-		<section>
-			<h2>Contributors</h2>
-			<hr/>
-      <ul id="contributors-list"></ul>
-			<aside class="notes">
-				<h3>enzo</h3>
-				<p>
-					This is the hall of fame of Drupal Console.
-				</p>
-				<p>
-					 Without this people I would not be speaking at here.
-				</p>
-			</aside>
-		</section>
-
-<!-- 		<section>
-			<h2>Where are they from</h2>
-			<p>
-				<br/>
-				<img src="assets/images/contributors-map.png" class="no-border">
-				<br/>
-			</p>
-			<aside class="notes">
-				<h3>enzo</h3>
-				<p>
-					Are you wondering where are they from ?
-				</p>
-				<p>
-					As you can see, this is mostly a LatinAmerican project and it's a proof our region can create techonlogy to share with the rest of the world.
-				</p>
-				<p>
-					And with your help we can create a much better project.
-				</p>
-			</aside>
-		</section> -->
-
-		<section>
-				<h2>Spread the word and love.</h2>
-				<hr/>
-        		<p>
-        			<a href="https://gratipay.com/~drupalconsole/" target="_blank"><img src="assets/images/gratipay.svg" class="no-border" style="margin-bottom: -7px;"><span>/~drupalconsole</span></a>
-				</p>
-				<br/>
-				<p>
-					<img src="assets/images/stickers.jpg" class="no-border">
-				</p>
-				<br/>
-				<p>
-					<h3>@drupalconsole | #drupalconsole</h3>
-				</p>
-				<aside class="notes">
-					<h3>jmolivas</h3>
-					<strong>
-						We need all of the help we can get, please use the project and love it or hate it, let us know.
-					</strong>
-					<ul class="bullets">
-						<li>Providing feedback.</li>
-						<li>Asking for new features.</li>
-						<li>Creating issues and sending pull requests.</li>
-						<li>Talking and Tweeting about this project and Proudly showing your Drupal Console sticker. Ping us for stickers at the end.</li>
-					</ul>
-				</aside>
-		</section>
-
-		<section data-background="#0076C2">
-			<h1 class="medium white">Roadmap</h1>
-		</section>
-
-		<section>
-			<h3 class="title">Increase code coverage.</h3>
-			<h3 class="title">Improve documentation and translations.</h3>
-			<h3 class="title">Improve verbose code-output.</h3>
-			<h3 class="title">Dummy content generation.</h3>
-			<aside class="notes">
-				<h3>jmolivas</h3>
-				<p>What features are planned for development? </p>
-				<ul class="bullets">
-					<li>Improve verbose code-output for learning. (Please let us know in which generators do you want to see this feature, we want to hear form you)</li>
-					<li>Generate dummy content. Probably using Faker library or Default Content project.</li>
-					<li>Content Staging export/import content.</li>
-				</ul>
-			</aside>
-		</section>
-
-		<section>
-			<h2>Milestones</h2>
-			<hr/>
-			<img src="assets/images/milestones.png" class="no-border">
-			<a href="https://github.com/hechoendrupal/DrupalConsole/milestones">https://github.com/hechoendrupal/DrupalConsole/milestones</a>
-			<aside class="notes">
-				<p>
-					You can see, what features we are currently working at by visiting the milestones URL on the github repo.
-				</p>
-			</aside>
-		</section>
-
-		<section>
-			<h2>Upcomming implementations</h2>
-			<hr/>
-			<h3 class="title">Drupal Commerce</h3>
-			<h3 class="title">Meta Tag</h3>
-			<h3 class="title">Page Manager</h3>
-			<h3 class="title">Rules</h3>
-			<h3 class="title">[Your module here]</h3>
-			<aside class="notes">
-				<p>
-					I already talk about the webprofier integration.
-				</p>
-				<p>
-					But now I will list the modules with plans or currenlty working on implementing DrupalConsole commands.
-				</p>
-				<ul>
-					<li>Drupal Commerce</li>
-					<li>Page Manager</li>
-					<li>MetaTag</li>
-					<li>Rules</li>
-					<li>Your module?</li>
-				</ul>
-			</aside>
-		</section>
-
-		<section data-background="#0076C2">
-			<h1 class="medium white">"Let's work together to make <br/><br/> awesome tools even better."</h1>
-			<h2 class="white">~Greg Anderson</h2>
-			<aside class="notes">
-			<p>
-				At this point, probably some of you are worried or wondering about overlaping with drush.
-			</p>
-			<p>
-				I can tell you, you do not need to worry.
-			</p>
-			</aside>
-		</section>
-
-		<section data-background="assets/images/druplicon-borg-back.png">
-			<h2>Drush integration</h2>
-			<hr/>
-				<br/>
-				<br/>
-				<br/>
-				<br/>
-				<br/>
-				<br/>
-				<br/>
-				<br/>
-				<br/>
-				<br/>
-				<br/>
-				<br/>
-				<br/>
-			<p>
-				<a href="https://github.com/drush-ops/drush/pull/1337">https://github.com/drush-ops/drush/pull/1337</a>
-			</p>
-			<aside class="notes">
-				<p>
-					I spend almost two days working with Greg Anderson at Pantheon offices and we made the DrupalConsole bootstrap and it has been improved further since then. 
-				</p>
-				<p>
-					We provide an integration and now drush can register DrupalConsole commands, and you can execute a DrupalConsole command using a drush alias.
-				</p>
-				<p>
-					We're going to be sprinting at BADCamp; anyone who wants to pitch in is welcome to join us.
-				</p>
-			</aside>
-		</section>
-
-
-		<section data-background="#0076C2">
-			<h1 class="medium white">GUI for the CLI.</h1>
-			<aside class="notes">
-				<h3>jmolivas</h3>
-				<p>
-					As mentioned before the goal of this project is provide a tool easy to use for everyone.
-				</p>
-				<p>
-					Before we wrap up, I like to talk about a planned feature. We are plannig a GUI for the CLI.
-				</p>
-			</aside>
-		</section>
-
-		<section>
-			<div>
-				<img src="assets/images/drupalgenerator.png" class="no-border">
-			</div>
-			<p>
-				<a href="http://drupalgenerator.com/">
-					<h3 class="title">http://drupalgenerator.com/</h3>
-				</a>
-			</p>
-			<aside class="notes">
-				<h3>jmolivas</h3>
-				<p>
-					We really want to make the tool even more accessible to all site administrators of Drupal 8.
-				</p>
-				<p>
-					Adding a GUI for Drupal Console as an alternative to the CLI.
-				</p>
-				<p>
-					This could be especially useful for site builders wanting to take advante of this tool without needing to use the command line.
-				</p>
-				<p>
-					It could be used for code generation in the form of a downloadable compressed file.
-				</p>
-			</aside>
-		</section>
-
+				
 		<section>
 			<h2>Questions & Feedback</h2>
 			<hr/>
