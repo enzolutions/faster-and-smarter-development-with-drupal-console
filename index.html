@@ -38,11 +38,11 @@
 				<section >
 					<br/>
 					<h1 class="big">Drupal 8 development effective and efficient with Drupal Console</h1>
-					<img src="assets/images/drupal-console.png" class="no-border logos">
-					<img src="assets/images/drupalcamp-chile.png" class="no-border logos">
-					<p>
-						<!-- <a href="http://bit.ly/melbourne-console">http://bit.ly/melbourne-console</a> -->
-					</p>
+					<span>
+						<img src="assets/images/drupal-console.png" class="no-border logos">
+						<img src="assets/images/digitalpulp.gif" class="no-border logos" style="">
+					</span>
+
 					<aside class="notes">
 						
 					</aside>
@@ -56,23 +56,33 @@
 						<br>
 						<div>
 							<h3 class="name">enzo - Eduardo Garcia</h3>
-							<h3 class="name">CTO</h3>
 						</div>
 						<div class="text-small">
 							<p>
 								<a target="_blank" href="http://twitter.com/enzolutions">@enzolutions</a>
 							</p>
+							<p>
+								<a target="_blank" href="http://bit.ly/enzotour16">http://bit.ly/enzotour16</a>
+							</p>
+
 						</div>
 					</div>
 					<div class="half">
 						<p>
 							<br><br><br>
 							<img src="assets/images/anexus-logo.png" class="no-border">
-							<br><br>
+							<br>
 						</p>
 						<div>
 							<h3 class="name">Phase2 Partner</h3>
-							<h3 class="name"><i>Location: Costa Rica</i></h3><small>(You're welcome to visit us and work from the tropics)</small>
+							<h3 class="name"><i>Location: Costa Rica</i></h3>
+							<br/>
+							<br/>
+							<a target="_blank" href="http://bit.ly/voteforenzo">http://bit.ly/voteforenzo</a>
+							<p>
+								<small>D.A Diretor at Large</small>
+							</p>
+							</p>
 						</div>
 					</div>
 					<aside class="notes">
@@ -298,8 +308,8 @@
 			<br/>
 			<p>
 				<h3 class="title">Documentation</h3>
-				<a href="http://bit.ly/console-book">
-					http://bit.ly/console-book
+				<a href="http://drupalconsole.com/docs/english">
+					http://drupalconsole.com/docs/english
 				</a>
 				</h3>
 			</p>
@@ -342,7 +352,7 @@ Install the Console locally by running the installer <br/> in your project direc
 </p>
 <br/>
 <pre><code class="bash text-tiny">
-$ curl http://drupalconsole.com/installer -L -o drupal.phar | php
+$ curl https://drupalconsole.com/installer -L -o drupal.phar | php
 
 $ mv drupal.phar /usr/local/bin/drupal
 
@@ -360,34 +370,6 @@ $ drupal
 		</aside>
 		</section>
 
-		<section>	
-			<img class="no-border" src="assets/images/console-installer.png" alt="">
-			<aside class="notes">
-				<p>
-					You can install the Drupal Console locally by running the installer in your project directory, the installer will take care of downloading the necesary files to run drupal console on you computer.
-				</p>
-				<p>
-					The installer script will simply check some php.ini settings, warn you if they are set incorrectly, and then download the latest console.phar in the current directory.
-				</p>
-<!-- 				<p>
-					You can place this file anywhere you wish. If you put it in your PATH, you can access it globally. On unixy systems you can even make it executable and invoke it without php.
-				</p> -->
-				<p>
-					You can use it as local file by typing php console.phar
-
-				</p>
-				<p>
-					But if want to access DrupalConsole from anywhere on your system, you need to move to a global accesible path.
-				</p>
-				<p>
-					NOTE: In this example I am moving the executable phar file to "/usr/local/bin/drupal". 
-					<br/>
-					The name drupal is just an alias you can name it anything you like.
-				</p>
-
-			</aside>
-		</section>
-
 		<section>
 			<h2>Using Composer</h2>
 			<hr/>
@@ -403,7 +385,7 @@ $ ~/.composer/vendor/bin/console
 </code></pre>
 <p>
 	<br/>
-	<a href="http://hechoendrupal.gitbooks.io/drupal-console/content/using/composer.html">Gitbook - Using Composer</a>
+	<a href="https://hechoendrupal.gitbooks.io/drupal-console/content/en/getting/composer.html">Documentation about using Composer</a>
 </p>
 		<aside class="notes">
 			<p>
@@ -506,6 +488,19 @@ $ composer create-project
 		</section>
 
 		<section>
+			<h2>drupal check</h2>
+			<hr/>
+			<p>
+				<img class="no-border" src="assets/images/drupal-check.png">
+			</p>
+			<aside class="notes">
+				<p>
+					You can check the sanity of your system
+				</p>
+			</aside>
+		</section>
+
+		<section>
 			<h2>site:install</h2>
 			<hr/>
 			<p>
@@ -530,6 +525,11 @@ $ composer create-project
 			<h2>site:debug</h2>
 			<hr/>
 			<img class="no-border" src="assets/images/site-debug-1.png">
+			<br/>
+			<p>
+				~/.console/sites/sample.yml <br/>
+				~/.console/sites/drupal8links.yml
+			</p>
 		</section>
 
 		<section>
@@ -539,7 +539,7 @@ $ composer create-project
 		</section>
 
 		<section>
-			<h2>drupal --target=drupal8links.dev cr all</h2>
+			<h2>drupal @drupal8links.dev cr all</h2>
 			<hr/>
 			<img class="no-border" src="assets/images/drupal-target.png">
 		</section>
@@ -551,6 +551,32 @@ $ composer create-project
 			<aside class="notes">
 				<p>
 					You can interact with any local site by using the --root option.
+				</p>
+			</aside>
+		</section>
+
+		<section>
+			<h2>multisite:debug</h2>
+			<hr/>
+			<p>
+				<img class="no-border" src="assets/images/console_multi_site_debug.png">
+			</p>
+			<aside class="notes">
+				<p>
+					Using the multisite:debug command, you can debug a multisite installation .
+				</p>
+			</aside>
+		</section>
+
+		<section>
+			<h2>drupal --uri=drupal8-rc3.dev cr all</h2>
+			<hr/>
+			<p>
+				<img class="no-border" src="assets/images/console_multi_site_option.png">
+			</p>
+			<aside class="notes">
+				<p>
+					Using the multisite:debug command, you can debug a multisite installation .
 				</p>
 			</aside>
 		</section>
@@ -704,7 +730,7 @@ $ composer create-project
 <pre><code class="bash text-big">
 $ drupal generate:plugin:block
   --module="example"
-  --class-name="ExampleBlock"
+  --class="ExampleBlock"
   --label="example_block"
   --plugin-id="example_block"
   --no-interaction
@@ -807,27 +833,47 @@ $ drupal generate:theme
 		</section>
  -->
 		<section>
-			<h2>Other generators</h2>
+			<h2>Other generators (Part I)</h2>
 			<hr/>
 <pre><code class="bash text-medium">
-  generate:authentication:provider 
-  generate:entity:config       
-  generate:event:subscriber  
-  generate:permissions
-  generate:plugin:field             
-  generate:plugin:fieldformatter    
-  generate:plugin:fieldtype         
-  generate:plugin:fieldwidget       
-  generate:plugin:imageeffect       
-  generate:plugin:rest:resource     
-  generate:plugin:rulesaction       
-  generate:plugin:type:annotation   
-  generate:plugin:type:yaml         
-  generate:service
-  generate:theme
+	generate:authentication:provider
+	generate:command
+	generate:doc:dash
+	generate:doc:gitbook
+	generate:entity:bundle
+	generate:entity:config
+	generate:event:subscriber
+	generate:form
+	generate:form:alter
+	generate:permissions
+	generate:plugin:condition
+	generate:plugin:field
+	generate:plugin:fieldformatter
 
 </code></pre>
 		</section>
+
+				<section>
+					<h2>Other generators (Part 2)</h2>
+					<hr/>
+<pre><code class="bash text-medium">
+	generate:plugin:fieldtype
+	generate:plugin:fieldwidget
+	generate:plugin:imageeffect
+	generate:plugin:imageformatter
+	generate:plugin:rest:resource
+	generate:plugin:rulesaction
+	generate:plugin:type:annotation
+	generate:plugin:type:yaml
+	generate:plugin:views:field
+	generate:profile
+	generate:routesubscriber
+	generate:service
+	generate:theme
+
+</code></pre>
+				</section>
+
 
 		<section data-background="#0076C2">
 			<h1 class="medium white">Interact with your Drupal</h1>
@@ -842,32 +888,6 @@ $ drupal generate:theme
 				</p>
 				<p>
 					For that reason we added commands to interact with the Drupal Installation.
-				</p>
-			</aside>
-		</section>
-
-		<section>
-			<h2>multisite:debug</h2>
-			<hr/>
-			<p>
-				<img class="no-border" src="assets/images/console_multi_site_debug.png">
-			</p>
-			<aside class="notes">
-				<p>
-					Using the multisite:debug command, you can debug a multisite installation .
-				</p>
-			</aside>
-		</section>
-
-		<section>
-			<h2>drupal --uri=drupal8-rc3.dev cr all</h2>
-			<hr/>
-			<p>
-				<img class="no-border" src="assets/images/console_multi_site_option.png">
-			</p>
-			<aside class="notes">
-				<p>
-					Using the multisite:debug command, you can debug a multisite installation .
 				</p>
 			</aside>
 		</section>
@@ -946,15 +966,17 @@ site
 			<hr/>
 <pre><code class="bash text-medium">
 config
-  config:debug                
-  config:edit                 
-  config:export               
-  config:export:content:type  
-  config:export:single        
-  config:export:view          
-  config:import               
-  config:import:single        
-  config:override             
+  config:debug
+  config:diff
+  config:edit
+  config:export
+  config:export:content:type
+  config:export:single
+  config:export:view
+  config:import
+  config:import:single
+  config:override
+  config:settings:debug
 
 </code></pre>
 		</section>
@@ -964,9 +986,11 @@ config
 			<hr/>
 <pre><code class="bash text-big">
 user
+  user:debug
+  user:delete
   user:login:clear:attempts
   user:login:url
-  user:password:hash       
+  user:password:hash
   user:password:reset
 
 </code></pre>
@@ -982,6 +1006,16 @@ user
 		</aside>
 	</section>
 
+		<section>
+			<h2>site:statistics</h2>
+			<hr/>
+			<p>
+				<img class="no-border" src="assets/images/console_site_statistics.png">
+			</p>
+			<aside class="notes">
+			</aside>
+		</section>
+
 
 		<section data-background="#0076C2">
 			<h1 class="medium white">Learn Drupal 8.</h1>
@@ -993,7 +1027,7 @@ user
 <pre><code class="bash text-big">
 $ drupal generate:controller
   --module="example"
-  --class-name="ExampleController"
+  --class="ExampleController"
   --method-name="hello"
   --route="/hello/{name}"
   --learning
@@ -1043,7 +1077,7 @@ $ drupal generate:controller
 <pre><code class="bash text-big">
 $ drupal generate:command
   --module="example"
-  --class-name="HelloCommand"
+  --class="HelloCommand"
   --command="example:hello"
   --no-interaction
 
@@ -1178,11 +1212,12 @@ You can create your own chain command and define the common Drupal 8 features yo
 
 application:
   environment: 'prod'
-  language: en #available: en,es,fr,hu,pt,ro
+  language: en
   editor: vim
   temp: /tmp
 
 </code></pre>
+		<p class="white">Languages available: en, ca, es, fr, hi, hu, pt_br, ro, ru, vn, zh_hans</p>
 		<aside class="notes">
 			<p>
 			The DrupalConsole project is multilingual, jsut by changing the language value, you can tun the project in a supported language.   
@@ -1215,7 +1250,7 @@ application:
 			<h1 class="medium white">#Protip 2</h1>
 			<h3 class="title white">Use default values</h3>
 <pre><code class="bash text-medium">
-# ~/.console/config.yml
+# ~/.console/commands.yml
 application:
 
 ...
@@ -1239,7 +1274,7 @@ application:
 			<h1 class="medium white">#Protip 3</h1>
 			<h3 class="title white">Disable contributed commands</h3>
 <pre><code class="bash text-medium">
-# ~/.console/config.yml
+# ~/.console/commands.yml
 application:
 
 ...
@@ -1268,7 +1303,7 @@ $ drupal cr all
 
 # ~/.console/aliases.yml
 application:
-  aliases:
+  default:
     commands:
       cache:
         rebuild:
@@ -1529,7 +1564,8 @@ $ composer install
 		<section>
 			<h2>Contributors</h2>
 			<hr/>
-      <ul id="contributors-list"></ul>
+      		<ul id="contributors-list"></ul>
+			<p>https://drupalconsole.com/contributors</p>
 			<aside class="notes">
 				<h3>enzo</h3>
 				<p>
@@ -1539,6 +1575,12 @@ $ composer install
 					 Without this people I would not be speaking at here.
 				</p>
 			</aside>
+		</section>
+
+		<section>
+			<h2>Languages</h2>
+			<hr/>
+			<img src="assets/images/console_languages.png" class="no-border">
 		</section>
 
 <!-- 		<section>
@@ -1595,10 +1637,10 @@ $ composer install
 		</section>
 
 		<section>
-			<h3 class="title">Increase code coverage.</h3>
+			<h3 class="title">Increase test code coverage.</h3>
 			<h3 class="title">Improve documentation and translations.</h3>
 			<h3 class="title">Improve verbose code-output.</h3>
-			<h3 class="title">Dummy content generation.</h3>
+
 			<aside class="notes">
 				<h3>jmolivas</h3>
 				<p>What features are planned for development? </p>
@@ -1629,6 +1671,7 @@ $ composer install
 			<h3 class="title">Meta Tag</h3>
 			<h3 class="title">Page Manager</h3>
 			<h3 class="title">Rules</h3>
+			<h3 class="title">scheduled Updates</h3>
 			<h3 class="title">[Your module here]</h3>
 			<aside class="notes">
 				<p>
@@ -1646,52 +1689,6 @@ $ composer install
 				</ul>
 			</aside>
 		</section>
-
-		<section data-background="#0076C2">
-			<h1 class="medium white">"Let's work together to make <br/><br/> awesome tools even better."</h1>
-			<h2 class="white">~Greg Anderson</h2>
-			<aside class="notes">
-			<p>
-				At this point, probably some of you are worried or wondering about overlaping with drush.
-			</p>
-			<p>
-				I can tell you, you do not need to worry.
-			</p>
-			</aside>
-		</section>
-
-		<section data-background="assets/images/druplicon-borg-back.png">
-			<h2>Drush integration</h2>
-			<hr/>
-				<br/>
-				<br/>
-				<br/>
-				<br/>
-				<br/>
-				<br/>
-				<br/>
-				<br/>
-				<br/>
-				<br/>
-				<br/>
-				<br/>
-				<br/>
-			<p>
-				<a href="https://github.com/drush-ops/drush/pull/1337">https://github.com/drush-ops/drush/pull/1337</a>
-			</p>
-			<aside class="notes">
-				<p>
-					I spend almost two days working with Greg Anderson at Pantheon offices and we made the DrupalConsole bootstrap and it has been improved further since then. 
-				</p>
-				<p>
-					We provide an integration and now drush can register DrupalConsole commands, and you can execute a DrupalConsole command using a drush alias.
-				</p>
-				<p>
-					We're going to be sprinting at BADCamp; anyone who wants to pitch in is welcome to join us.
-				</p>
-			</aside>
-		</section>
-
 
 		<section data-background="#0076C2">
 			<h1 class="medium white">GUI for the CLI.</h1>
@@ -1739,10 +1736,15 @@ $ composer install
 			<br/>
 			<h2 class="dark-blue">@enzolutions | @drupalconsole</h2>
 			<p>
-				<br/>
-					<a href="https://gitter.im/hechoendrupal/DrupalConsole">
-						<h3>https://gitter.im/hechoendrupal/DrupalConsole</h3>
+				<a href="http://bit.ly/enzotour16-nyc"><h3>http://bit.ly/enzotour16-nyc</h3></a>
+			</p>
+			<p>
+					<a href="http://bit.ly/console-support">
+						<h3>http://bit.ly/console-support</h3>
 					</a>
+			</p>
+			<p>
+				<a href="https://groups.drupal.org/console"><h3>https://groups.drupal.org/console</h3></a>
 			</p>
 		</section>
 
